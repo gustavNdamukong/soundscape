@@ -35,9 +35,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     * Database query obtimisation through indexing
     * Periodical unsubscription from real-time DB listeners whenever dependent components onmount, to minimise high request numbers.
 
-    ![Soundscape - social music-sharing app](https://github.com/gustavNdamukong/soundscape/blob/main/soundscape1.png?raw=true)
+    ![Soundscape - social music-sharing app](https://github.com/gustavNdamukong/soundscape/blob/main/public/soundscape1.png?raw=true)
 
-    ![Soundscape - social music-sharing app](https://github.com/gustavNdamukong/soundscape/blob/main/soundscape2.png?raw=true)
+    ![Soundscape - social music-sharing app](https://github.com/gustavNdamukong/soundscape/blob/main/public/soundscape2.png?raw=true)
 
 
 
