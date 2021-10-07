@@ -1,0 +1,11 @@
+rules_version = '2';
+  service firebase.storage {
+      match /b/{bucket}/o {
+          match /covers/{userId}/{document=**} {
+              // allow users read and create if they are logged in
+              allow read, create: if request.auth!=null;
+              // allow only the owner of a resource delete that resource
+              allow delete: if request.auth.uid == userId;
+          }
+      }
+  }

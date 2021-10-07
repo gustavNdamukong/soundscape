@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /playlists/{docId} {
+      // they can read & create but they must be logged in
+      allow read, create: if request.auth != null;
+      // they can delete & update only if they own the resource
+      allow delete, update: if request.auth.uid == resource.data.userId
+    }
+  }
+}
