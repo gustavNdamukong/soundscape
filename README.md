@@ -19,6 +19,8 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 * Features:
+    * Built in Vue.js 3, using the Composition API 
+    * Use is made of composables (functions), which are kept separate & imported into components
     * Users can sign up
     * Users can logout
     * Users can view all playlists posted by al users
